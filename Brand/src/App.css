@@ -1,0 +1,220 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&display=swap');
+
+:root {
+  --red: #d01c28;
+  --gray: #2e2e2e;
+}
+* {
+  margin: 0;
+}
+
+body {
+  font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+button {
+  width: 130px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(15, 15, 15);
+  border: none;
+  color: white;
+  font-weight: 600;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  fill: white
+}
+
+button::before {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  left: -100%;
+  top: 0;
+  transition-duration: .3s;
+  mix-blend-mode: difference;
+}
+
+button:hover::before {
+  transition-duration: .3s;
+  transform: translate(100%,-50%);
+  border-radius: 0;
+}
+
+button:active {
+  transform: translate(5px,5px);
+  transition-duration: .3s;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  height: 80px;
+  align-items: center;
+  
+
+  margin-bottom: 2rem;
+
+  border: 1px solid #2e2e2e;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav ul li:hover{
+  color: #d01c28;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+#logo{
+  width: 6rem;
+  height: 4rem;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  height: 12rem;
+  border: 3px solid yellow;
+  gap: 8rem;
+  margin-top: 10rem;
+  
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  
+  width: 70%;
+  max-width: 1090px;
+  
+  padding: 15px;
+  border: 1px solid red;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+}
+.hero-content h1 {
+  
+  line-height: 6px;
+  font-size: 1.5vw;
+  font-weight: 900;
+
+}
+
+
+
+.hero-content p {
+  font-weight: 700;
+  color: var(--gray);
+  max-width: 800px;
+  padding: 0.8rem;
+  font-size: 1vw;
+}
+
+.hero-btn {
+  display: flex;
+  gap: 40px;
+}
+.hero-btn button {
+  font-size: 24px;
+}
+.secondary-btn {
+  background: #4169e1;
+  color: black;
+  border: transparent;
+}
+
+.shopping p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.brand-icons {
+  display: flex;
+  gap: 16px;
+}
+
+#daraz,
+ #sastodeal{
+  height: 5rem;
+  padding: 15px;
+  cursor: pointer;
+  
+}
+
+#daraz:hover, #sastodeal:hover{
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.2);
+}
+
+.hero-image{
+  width: 900px;
+  
+  border: 3px solid violet;
+  max-height: 360px ;
+  
+  
+
+
+}
+
+#gold{
+  width: 23rem;
+  height: 23rem;
+  
+}
+
+@media (max-width: 768px) {
+  .hero-container{
+    flex-direction: column;
+    /* width: 450px;
+    height: 250px;
+    
+    margin-left: 25rem; */
+    gap: 5rem;
+    margin-top: 2rem;
+  }
+  
+  .hero-content{
+    
+    
+    padding: 9rem;
+  }
+
+  .hero-content h1{
+      font-size: 1.5vw;
+      padding: 20px;
+  }
+
+  #gold{
+    margin-left: 14rem;
+    width: 20rem;
+
+  }
+
+  
+ 
+ 
+
+ 
+}
