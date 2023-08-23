@@ -11,12 +11,12 @@ const HeroSection = () => {
                 </p>
         
                 <div className="hero-btn">
-                    <button>Shop Now </button>
-                    <button className="secondary-btn">Category</button>
+                    <button id="shop">Shop Now </button>
+                    <button className="secondary-btn" >Category</button>
                 </div>
         
                 <div className="shopping">
-                    <p>Also Available On</p>
+                    <p id="underline">Also Available On</p>
         
                     <div className="brand-icons">
                     <img src="https://icms-image.slatic.net/images/ims-web/f0e6e2ce-bd8d-4625-ad8a-1114c7ea6890.png"  id="daraz" alt="daraz-logo" />
